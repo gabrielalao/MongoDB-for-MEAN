@@ -1,0 +1,45 @@
+<nav style = "background-color:coral; color: white" >
+ <div class = "container">
+  <a style = "background-color:coral; color: white" class="navbar-brand" href="/">IDEAS</a>
+  <button style = "background-color:rgb(250, 246, 244); width = 60%" class="navbar-toggler" type="button" 
+  data-toggle="collapse" data-target="#navbarNav" 
+  aria-controls="navbarNav"  
+  aria-label="Toggle navigation">
+    
+  </button>
+  <div style = "background-color:coral; color: white" class="collapse navbar-collapse" id="navbarNav">
+    <ul style = "background-color:coral; color: white">
+      <li style = "background-color:coral; color: white">
+        <a style = "background-color:coral; color: white" class="nav-link" href="/">Home</a>
+      </li>
+      <li style = "background-color:coral; color: white" >
+        <a style = "background-color:coral; color: white" class="nav-link" href="/about">About</a>
+      </li>
+      <ul >
+
+{{#if user}}
+
+<lI style = "background-color:coral; color: white" >
+<a style = "background-color:coral; color: white" 
+data-toggle="dropdown" >Ideas</a>
+<div style = "background-color:coral; color: white" class="dropdown-menu">
+<a href="/ideas" style = "background-color:coral; color: white" class="dropdown-items">Ideas</a>
+<a style = "background-color:coral; color: white"href="/ideas/add" class="dropdown-item">Add</a>
+</div>
+</lI>
+<li style = "background-color:coral; color: white">
+        <a style = "background-color:coral; color: white" class="nav-link" href="/users/logout">LogOut</a>
+      </li>
+{{else}}
+<li style = "background-color:coral; color: white">
+        <a style = "background-color:coral; color: white" class="nav-link" href="/users/login">Login</a>
+      </li>
+      <li style = "background-color:coral; color: white" >
+        <a style = "background-color:coral; color: white" class="nav-link" href="/users/register">Register</a>
+      </li>
+{{/if}}
+</ul>
+    </ul>
+  </div>
+ </div>
+</nav>

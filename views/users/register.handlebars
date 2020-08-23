@@ -1,0 +1,35 @@
+<div class="row">
+
+<div class="col-md-6 mx-auto">
+<div class="card card-body"> 
+
+<h3 class="text-center">account registring</h3>
+<form action="/users/register" method="post">
+<div class="form-group">
+ <label for="name">name</label>   
+ <input type="text" class="form-control"
+ required name="name" value="{{name}}" >
+</div>
+<div class="form-group">
+ <label for="email">email</label>   
+ <input type="email" name="email" class="form-control"
+ value = "{{email}}" required>
+</div>
+
+<div class="form-group">
+ <label for="passport">passport</label>   
+ <input value = "{{password}}" type="passport" name= "password" class="form-control"
+ required>
+</div>
+<div class="form-group">
+ <label for="passport2"> confirmpassport</label>   
+ <input value = "{{password2}}" name = "password2" type="passport" class="form-control"
+ required>
+</div>
+<button type="submit" class="btn btn-primary">submit</button>
+</form>
+
+</div>
+</div>
+
+</div>

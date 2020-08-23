@@ -1,0 +1,13 @@
+{{#each ideas}}
+<div style = "background-color:coral; color: white" >
+<h4 style = "text-align: center">{{title}}</h4>
+<p style = "text-align: center">{{details}}</p>
+<a  class = "btn btn-danger mb-2 btn-block" href="/ideas/edit/{{id}}">edit</a>
+<form method = "post" action="/ideas/{{id}}?_method=DELETE">
+<input type="hidden" name = "_method" value="DELETE">
+<input type="submit" class ="btn btn-danger btn-block" value = "Delete">
+</form>
+</div>
+{{else}}
+<p>No Ideas</p>
+{{/each}}
